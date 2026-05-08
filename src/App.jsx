@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/layout/Header"; 
 import Sidebar from "./components/layout/Sidebar"; 
-
 // التعديل هنا: شيلنا /pages/ لأن المجلد موجود في src مباشرة
 import ReceiptDetails from "./pages/ReceiptDetails"; 
+import ViewReceipt from "./pages/ViewReceipt";
 
 import { Toaster } from "react-hot-toast";
 
@@ -24,6 +24,9 @@ function App() {
                 <div style={{ padding: "50px", textAlign: "center" }}>
                   <h2>قائمة الإيصالات</h2>
                 </div>
+              </Route>
+              <Route exact path="/">
+                <ViewReceipt /> 
               </Route>
             </Switch>
           </main>
