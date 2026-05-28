@@ -59,7 +59,8 @@ const StatusSection = () => {
           </div>
 
           {/* الخط الواصل بين النقاط */}
-          <div className="position-absolute" style={{ right: '-27px', top: '15px', bottom: '15px', width: '2px', backgroundColor: '#eee', zIndex: -1 }}></div>
+          <div className="position-absolute"
+           style={{ right: '-27px', top: '15px', bottom: '15px', width: '2px', backgroundColor: '#eee', zIndex: -1 }}></div>
         </div>
       </div>
 
